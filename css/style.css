@@ -4,7 +4,6 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-
 }
 
 @font-face {
@@ -13,111 +12,123 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-
 }
-
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #0E1014;
     color: #FFFFFF;
 }
 
-header img{
+header img {
     display: block;
-    margin: 75px 0 0 360px;
+    margin: 75px auto 0;
+    max-width: 220px;
+    width: 100%;
 }
 
-h1{
+h1 {
     font-size: 64px;
     font-family: "Unbounded";
     text-align: center;
     margin-top: 60px;
+    line-height: 1.2;
+    padding: 0 16px;
 }
 
-h1 span{
+h1 span {
     color: #9747FF;
 }
 
-p{
+p {
     font-size: 24px;
     font-family: "Poppins";
     text-align: center;
     margin: 24px auto 0;
-    width: 792;
+    max-width: 792px;
+    width: 100%;
+    padding: 0 16px;
+    line-height: 1.5;
 }
 
-a{
+a {
     color: #FFFFFF;
     font-family: "Poppins";
     font-size: 24px;
     text-decoration: none;
     background-color: #9747FF;
     width: 340px;
+    max-width: calc(100% - 32px);
     height: 66px;
     display: block;
     text-align: center;
     line-height: 66px;
-    border-radius: 36px; 
+    border-radius: 36px;
     margin: 40px auto;
 }
 
-a:hover{
-    background-color:#8233E8;
+a:hover {
+    background-color: #8233E8;
 }
 
-section img{
+section img {
     display: block;
-    width: 792px;
-    height: 446px;
+    width: 100%;
+    max-width: 792px;
+    height: auto;
     margin: 0 auto;
-
+    padding: 0 16px;
 }
 
-
-@media(max-width: 768px){
-
-    header img{
-        margin:65px 0 0 60px;
-
+@media (max-width: 768px) {
+    header img {
+        margin: 50px auto 0;
+        max-width: 180px;
     }
 
-    p{
-        width: 648px;
+    h1 {
+        font-size: 48px;
+        margin-top: 40px;
     }
 
-
-
-
-
+    p {
+        font-size: 22px;
+        max-width: 648px;
+    }
 }
 
-@media(max-width: 375px){
-
-    header img{
-        margin: 32px 0 0 16px;
-    }
-    h1{
-        font-size: 40px;
-    }
-    
-    p{
-        font-size: 20px;
-        width: 251px;
-    }
-    a{
-        font-size: 20px;
-        width: 251px;
-        
+@media (max-width: 375px) {
+    header img {
+        margin: 32px auto 0;
+        max-width: 160px;
     }
 
+    h1 {
+        font-size: 34px;
+        margin-top: 32px;
+    }
 
-    section img{
-        width: 340px;
-        height: 230px;
+    p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    a {
+        font-size: 18px;
+        width: 100%;
+        max-width: 251px;
+        height: 56px;
+        line-height: 56px;
+    }
+
+    section img {
+        max-width: 340px;
+        width: 100%;
+        padding: 0;
     }
 }
